@@ -154,6 +154,7 @@ function subStarters() {
             let playerStart = resp.subStart
             playerPull.starter = false;
             playerStart.starter = true;
+            //fix starter/sub swap
             runGame()
         })
 }
@@ -198,9 +199,9 @@ function playAgain() {
         ]).then(function (resp) {
             teamPoints = 0;
             gameCount = 5;
-            if (resp.rematch && newTeam === false) {
+            if (resp.rematch && resp.newTeam === false) {
                 startGame();
-            } else if (resp.rematch && newTeam) {
+            } else if (resp.rematch && resp.newTeam) {
                 count = 1;
                 playerArray = [];
                 starterArray = [];
