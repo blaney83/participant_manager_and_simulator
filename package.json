@@ -1,0 +1,23 @@
+{
+  "name": "participant_manager_and_simulator",
+  "version": "1.0.0",
+  "description": "Node application for creating a team using constructors and simulation-style object manipulation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaney83/participant_manager_and_simulator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blaney83/participant_manager_and_simulator/issues"
+  },
+  "homepage": "https://github.com/blaney83/participant_manager_and_simulator#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  }
+}
