@@ -3,7 +3,7 @@
 const inquirer = require("inquirer");
 //chalk package for coloring console output
 const chalk = require("chalk")
-//counts the number of players entechalk.red into the system. Set to max 5
+//counts the number of players entered into the system. Set to max 5
 let count = 1;
 //holds all of the constructed Player objects
 let playerArray = [];
@@ -120,14 +120,14 @@ function addPlayer() {
 }
 
 
-//used to ensure that the values entechalk.red for the defense and offense are within the range of 1-10
+//used to ensure that the values entered for the defense and offense are within the range of 1-10
 function validateScore(score) {
     if (score > 0 && score < 11) {
         return true;
     } else { return "Pick a number between 1 and 10" }
 }
 
-//used to ensure that the name entechalk.red for each player has not been used already.
+//used to ensure that the name entered for each player has not been used already.
 function validateName(name) {
     if (playerNames.includes(name) === false) {
         return true;
